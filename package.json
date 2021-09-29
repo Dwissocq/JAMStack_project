@@ -10,5 +10,8 @@
     "clean": "rm -rf ./_site",
     "build": "npm run clean && eleventy",
     "start": "npm run clean && eleventy --serve --watch"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
   }
 }
