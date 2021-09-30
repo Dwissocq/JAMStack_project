@@ -3,7 +3,7 @@ layout: post.html
 tags: posts
 title: Flower of Scotland
 flag : https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg
-picture : /resources/scotland1.jpg
+picture : /resources/scotland1.webp
 alt : Quiraing
 ---
 

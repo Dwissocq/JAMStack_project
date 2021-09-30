@@ -3,7 +3,7 @@ layout: post.html
 tags: posts
 title: Expédition au pays des kangourous
 flag : https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/2560px-Flag_of_Australia.svg.png
-picture : /resources/australia1.jpg
+picture : /resources/australia1.webp
 alt : François Perron National Park
 ---
 

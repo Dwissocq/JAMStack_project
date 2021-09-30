@@ -3,7 +3,7 @@ layout: post.html
 tags: posts
 title: Ô Canada
 flag : https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg
-picture : /resources/canada1.jpg
+picture : /resources/canada1.webp
 alt : Orignal
 ---
 

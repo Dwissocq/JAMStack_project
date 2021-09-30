@@ -3,7 +3,7 @@ layout: post.html
 tags: posts
 title: Voyage en Terre du Milieu
 flag : https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/320px-Flag_of_New_Zealand.svg.png
-picture : /resources/new-zealand1.jpg
+picture : /resources/new-zealand1.webp
 alt : Hobbitown
 ---
 
