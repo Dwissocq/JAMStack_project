@@ -99,7 +99,7 @@ a:active {
     background-color: rgba(238, 161, 98, 0.8);
     border-radius: 5px;
     border: black solid;
-    color: white;
+    color: black;
     padding: 5px 10px;
     text-align: center;
     display: inline-block;
