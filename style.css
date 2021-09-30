@@ -1,3 +1,463 @@
+html {
+    margin:0;
+    padding:0;
+    background-image: url("resources/australia.jpg");
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main{
+    flex: 1;
+}
+
 header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+}
+
+#welcome{
+    color: white;
+    font-size: 2em;
+    font-family: "Courier New", serif;
+    margin-bottom: 0px;
+
+}
+
+nav{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    font-size: x-large;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 1);
+    border-radius: 5px;
+    border: black solid;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+a:visited {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 1);
+    border-radius: 5px;
+    border: black solid;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 1);
+    border-radius: 5px;
+    border: black solid;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+a:active {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 1);
+    border-radius: 5px;
+    border: black solid;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.page:link {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 0.8);
+    border-radius: 5px;
+    border: black solid;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.page:visited {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 1);
+    border-radius: 5px;
+    border: black solid;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.page:hover {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 1);
+    border-radius: 5px;
+    border: black solid;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.page:active {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 1);
+    border-radius: 5px;
+    border: black solid;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.banner{
+    max-width: 100%;
+    max-height: 180px;
+    border: solid black;
+    border-radius: 5px;
+}
+
+.about1{
+    display: flex;
+    justify-content: center;
+}
+
+.about2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 10%);
+    border-radius: 5px;
+    border: black solid;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/********* Superposition simple de texte sur une image *******/
+
+/* Conteneur principal */
+.overlay-image {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    height:130px;
+    width: 130px;
+    clip-path:ellipse(45% 45%);
+}
+
+.text {
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    position: absolute;
+    transform: translate(0%, 250%);
+    width: 100%;
+}
+
+/* Overlay */
+.hover {
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: auto;
+    /*clip-path:ellipse(45% 45%);*/
+    opacity: 0;
+    transition: .5s ease;
+}
+
+/* Apparition overlay sur passage souris */
+.overlay-image:hover .hover {
+    opacity: 1;
+}
+
+/********* Fin du code de superposition simple de texte sur une image *******/
+
+.articles{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.article:link {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 1);
+    border-radius: 5px;
+    border: black solid;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.article:visited {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 1);
+    border-radius: 5px;
+    border: black solid;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.article:hover {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 1);
+    border-radius: 5px;
+    border: black solid;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.article:active {
+    text-decoration: none;
+    background-color: rgba(238, 161, 98, 1);
+    border-radius: 5px;
+    border: black solid;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.flag{
+    max-height: 300px;
+    max-width: 150px;
+}
+
+.post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(238, 161, 98, 0.5);
+    border-radius: 5px;
+    border: black solid;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.post2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    border: black solid;
+}
+
+.picture{
+    max-height: 250px;
+    border-radius: 50px;
+}
+
+.description{
+    max-width: 50vw;
+}
+
+@media screen and (max-width: 400px) {
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    li{
+        margin-bottom: 10px;
+    }
+
+    .about1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 10%);
+        border-radius: 5px;
+        border: black solid;
+        color: white;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .image {
+        display: block;
+        height:113px;
+        width: 113px;
+        clip-path:ellipse(45% 45%);
+    }
+
+    .text {
+        color: #ffffff;
+        font-size: 11px;
+        text-shadow: 2px 2px 2px #000;
+        text-align: center;
+        position: absolute;
+        transform: translate(0%, 375%);
+        width: 100%;
+    }
+
+    .articles{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .post{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        background-color: rgba(238, 161, 98, 0.5);
+        border-radius: 5px;
+        border: black solid;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .post2{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+        border: black solid;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 710px){
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    li{
+        margin-bottom: 10px;
+    }
+
+    .about1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 10%);
+        border-radius: 5px;
+        border: black solid;
+        color: white;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .image {
+        display: block;
+        height:113px;
+        width: 113px;
+        clip-path:ellipse(45% 45%);
+    }
+
+    .text {
+        color: #ffffff;
+        font-size: 13px;
+        text-shadow: 2px 2px 2px #000;
+        text-align: center;
+        position: absolute;
+        transform: translate(0%, 275%);
+        width: 100%;
+    }
+
+    .articles{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .post{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        background-color: rgba(238, 161, 98, 0.5);
+        border-radius: 5px;
+        border: black solid;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .post2{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+        border: black solid;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .description{
+        max-width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    html {
+        margin:0;
+        padding:0;
+        background-color: black;
+        background-image: url("resources/australia.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+    }
 }
